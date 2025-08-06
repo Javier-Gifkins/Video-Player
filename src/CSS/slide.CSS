@@ -1,0 +1,27 @@
+/* styling range input slider to be consistent with rest of player */
+input [type = "range"] {
+    /* remove default webkit styleing fr customisation */
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+/* lets us customise our own slider */
+input [type = "range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+}
+
+/* also helps accessability impact */
+input [type = "range"]:focus {
+    outline: none;
+}
+
+input[type = "range"]::-ms-track{
+    width: 100%;
+    cursor: pointer;
+
+    /* hiding all the native styles for custom style */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
