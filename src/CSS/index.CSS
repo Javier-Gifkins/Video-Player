@@ -32,6 +32,7 @@ h1 {
     /* forcing css to apply black background even if its overwritten by other colours. !imporatnat make nothing able to overwrite it*/
     background-color: #000 !important;
 
+
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;   
 }
@@ -58,9 +59,44 @@ h1 {
 }
 
 .controls.btn {
-    /* remove default borders around th button */
+    /* remove default borders around the button */
     border: 0;
     background: transparent;
     cursor: pointer;
 }
 
+.controls .fa-play {
+    /* style the play button icon */
+    color: #28a745;
+}
+
+.controls .fa-stop {
+    /* style the stop button icon */
+    color: #dc3545;
+}
+
+.controls .fa-pause {
+    /* white will stand out clearly */
+    color: #fff;
+}
+
+.controls .timestamp {
+    color: #fff;
+    font-weight: bold;
+    /* adding a space from the previous button (toolbar/progress) */
+    margin-left: 10px;
+}
+
+/* for accessibility impact */
+.btn:focus {
+    outline: 0;
+}
+
+/* technique in css for responsiveness */
+/* take up more space on narrow screens */
+@media (max-width: 800px) {
+    .screen,
+    .controls {
+        width: 90%;
+    }
+}
