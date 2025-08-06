@@ -33,6 +33,34 @@ h1 {
     background-color: #000 !important;
 
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+    border-top-right-radius: 10px;   
 }
+
+.controls {
+    background: #333;
+    /* default control text colour */
+    color: #fff;
+    /* match the screen width for viual alignment */
+    width: 60%;
+
+    /* bottom mirroring the top elements for consistency */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    /* center controls */
+    justify-content: center;
+    /* virtically aligning items to middle */
+    align-items: center;
+
+    /* putting 10 pixels between the elements */
+    padding: 10px;
+}
+
+.controls.btn {
+    /* remove default borders around th button */
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
